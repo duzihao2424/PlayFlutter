@@ -8,6 +8,7 @@ import 'package:wan_flutter/model/home_list_model.dart';
 import 'package:wan_flutter/service/service_method.dart';
 import 'package:flutter_easyrefresh/material_header.dart';
 import 'base_webview.dart';
+import 'login_page.dart';
 
 class homePage extends StatefulWidget {
   @override
@@ -214,7 +215,11 @@ class _homePageState extends State<homePage>
           Expanded(
             child: Container(
               child:
-              IconButton(icon: Icon(Icons.favorite_border)),
+              IconButton(icon: Icon(Icons.favorite_border),onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context){
+                  return LoginPage();
+                }));
+              },),
               alignment: Alignment.centerRight,
             ),
           ),

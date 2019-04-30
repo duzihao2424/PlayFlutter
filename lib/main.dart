@@ -54,7 +54,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.orange,
         accentColor: Colors.orange,
       ),
-      home: LoginPage(),
+      home: bottomNavitor(),
     );
   }
 }
